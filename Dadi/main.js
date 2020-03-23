@@ -7,17 +7,22 @@ var utenteUnoNumero = alert(Math.floor(Math.random() * 6));
 
 // l'utente 2 avrà assegnato il secondo numero che esce
 var utentePCNumero = alert(Math.floor(Math.random() * 6));
+
+console.log(utenteUnoNumero);
+console.log(utentePCNumero);
+
+
 // se il numero di utente 1 è maggiore vincerà
 // confrontare i due numeri degli utenti
-if (utenteUno > utentePCNumero ){
-  msg = ("Hai vinto , che culo !")
+if (utenteUnoNumero > utentePCNumero ){
+  msg = "Hai vinto , che culo !";
 }
 // se il numero di utentePCNumero è maggiore vincerà
- else if (utenteUno < utentePCNumero ) {
-   msg = " Hai perso , sfortunello"
- } else {
+  else if (utenteUnoNumero < utentePCNumero ) {
+   msg =  "Hai perso , sfortunello !";
+} else {
    msg = "I due numeri sono uguali"
- }
+}
 
 
 document.getElementById('ciao').innerHTML = msg ;
